@@ -15,6 +15,7 @@ class LoginScreen extends StatelessWidget {
       body: Container(
         alignment: Alignment.center,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Tiktok Clone",
@@ -66,13 +67,38 @@ class LoginScreen extends StatelessWidget {
                   Radius.circular(5),
                 ),
               ),
-              child: const Center(
-                child: Text(
-                  "Login",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+              child: InkWell(
+                onTap: () {
+                  // print("Login User");
+                },
+                child: const Center(
+                  child: Text(
+                    "Login",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+                  ),
                 ),
               ),
             ),
+            const SizedBox(
+              height: 15,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              // crossAxisAlignment: CrossAxisAlignment.s,
+              children: [
+                const Text(
+                  'Don\'t have an account ',
+                  style: TextStyle(fontSize: 20),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: Text(
+                    'Register',
+                    style: TextStyle(fontSize: 20, color: buttonColor),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
