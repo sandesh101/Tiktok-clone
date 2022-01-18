@@ -54,6 +54,25 @@ class LoginScreen extends StatelessWidget {
                 icon: Icons.lock,
               ),
             ),
+            const SizedBox(
+              height: 30,
+            ),
+            Container(
+              width: MediaQuery.of(context).size.width - 40,
+              height: 50,
+              decoration: BoxDecoration(
+                color: buttonColor,
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(5),
+                ),
+              ),
+              child: const Center(
+                child: Text(
+                  "Login",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+                ),
+              ),
+            ),
           ],
         ),
       ),
