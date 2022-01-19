@@ -5,10 +5,13 @@ import 'package:get/get.dart';
 import 'package:tiktok_clone/views/screens/signup_screen.dart';
 
 import 'constant.dart';
+import 'controller/auth_controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp().then((value) {
+    Get.put(AuthController);
+  });
   runApp(const MyApp());
 }
 
