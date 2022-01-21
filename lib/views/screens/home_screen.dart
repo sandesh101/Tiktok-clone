@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_clone/views/widgets/custom_icon.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -17,8 +18,8 @@ class HomeScreen extends StatelessWidget {
             label: "Search",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home, size: 30),
-            label: "Home",
+            icon: CustomIcon(),
+            label: "",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.message, size: 30),
