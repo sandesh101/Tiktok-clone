@@ -21,11 +21,11 @@ class _HomeScreenState extends State<HomeScreen> {
             pageIndex = index;
           });
         },
+        currentIndex: pageIndex,
         backgroundColor: backgroundColor,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: buttonColor,
         unselectedItemColor: Colors.white,
-        currentIndex: pageIndex,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home, size: 30),
@@ -49,9 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: const Center(
-        child: Text("Home Page"),
-      ),
+      body: pages[pageIndex],
     );
   }
 }
