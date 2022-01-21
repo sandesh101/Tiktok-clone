@@ -19,7 +19,7 @@ class CustomIcon extends StatelessWidget {
             ),
           ),
           Container(
-            margin: const EdgeInsets.only(right: 8),
+            margin: const EdgeInsets.only(right: 10),
             width: 38,
             decoration: BoxDecoration(
               color: const Color.fromARGB(255, 32, 211, 234),
