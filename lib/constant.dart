@@ -3,13 +3,14 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:tiktok_clone/controller/auth_controller.dart';
+import 'package:tiktok_clone/views/screens/add_video.dart';
 
 //PAGES
 
 const pages = [
   Text("Home Screen"),
   Text("Search Screen"),
-  Text("Add Page Screen"),
+  AddVideo(),
   Text("Message Screen"),
   Text("Profile Screen"),
 ];
